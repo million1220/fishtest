@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent it2 = new Intent(getApplicationContext(),temperaturetest.class);
                 startActivity(it2);
+
             }
         });
     }
