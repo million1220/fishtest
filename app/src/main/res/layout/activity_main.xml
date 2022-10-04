@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/top_home"
@@ -25,6 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/temp"
         android:layout_width="match_parent"
@@ -39,79 +43,29 @@
         android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@id/top_home" />
 
-    <TextView
-        android:id="@+id/temp_data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#807986AC"
-        android:paddingLeft="90dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="16dp"
-        android:text="22°C"
-        android:textColor="#061339"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/temp" />
-
     <Button
         android:id="@+id/temp_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="35dp"
 
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@id/temp_data"
+        android:text="Button1"
         app:layout_constraintRight_toRightOf="@id/temp"
         app:layout_constraintTop_toTopOf="@id/temp" />
+
 
     <TextView
         android:id="@+id/ph"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4D7986AC"
+        android:background="#D2D6E1"
         android:paddingLeft="95dp"
         android:paddingTop="15dp"
         android:paddingBottom="5dp"
-        android:text="ph"
+        android:text="PH"
         android:textColor="#061339"
         android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@id/temp_data" />
-
-    <TextView
-        android:id="@+id/ph_data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#4D7986AC"
-        android:paddingLeft="97dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="16dp"
-        android:text="7.2"
-        android:textColor="#061339"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/ph" />
-
-    <Button
-        android:id="@+id/ph_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="35dp"
-
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@id/ph_data"
-        app:layout_constraintRight_toRightOf="@id/temp"
-        app:layout_constraintTop_toTopOf="@id/ph" />
-
-    <TextView
-        android:id="@+id/Feed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#4D7986AC"
-        android:paddingLeft="95dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="5dp"
-        android:text="feed"
-        android:textColor="#061339"
-        android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@id/ph_data" />
+        app:layout_constraintTop_toBottomOf="@+id/temp" />
 
     <Button
         android:id="@+id/ph_btn2"
@@ -119,22 +73,55 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="35dp"
 
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@id/ph_data"
+        android:text="Button2"
         app:layout_constraintRight_toRightOf="@id/temp"
         app:layout_constraintTop_toTopOf="@id/ph" />
 
+
     <TextView
-        android:id="@+id/ph_data2"
+        android:id="@+id/Feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4D7986AC"
-        android:paddingLeft="97dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="16dp"
-        android:text="7.2"
+        android:background="#807986AC"
+        android:paddingLeft="95dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="Feed"
         android:textColor="#061339"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/ph" />
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+    <Button
+        android:id="@+id/feed_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:text="Button3"
+        app:layout_constraintRight_toRightOf="@id/temp"
+        app:layout_constraintTop_toTopOf="@+id/Feed" />
+
+    <TextView
+        android:id="@+id/Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2D6E1"
+        android:paddingLeft="95dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="Light"
+        android:textColor="#061339"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/Feed"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/light_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:text="Button4"
+        app:layout_constraintEnd_toEndOf="@+id/temp"
+        app:layout_constraintTop_toTopOf="@id/Light" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -15,14 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        TextView ed = findViewById(R.id.temp);
-        ed.setOnClickListener(new View.OnClickListener() {
+        TextView ed1 = findViewById(R.id.temp);
+
+        ed1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it2 = new Intent(getApplicationContext(),temperaturetest.class);
                 startActivity(it2);
-//test02
-            }
-        });
+            } });
+
+
     }
 }

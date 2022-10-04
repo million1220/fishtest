@@ -5,16 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D2D6E1"
-    tools:context=".temperaturetest">
-
+    tools:context=".phtest">
     <TextView
-        android:id="@+id/jiarestate"
+        android:id="@+id/phstate"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginTop="412dp"
         android:background="#807986AC"
         android:gravity="center|left"
-        android:text="加熱棒狀態"
+        android:text="水泵狀態"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,28 +22,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nowtemper"
+        android:id="@+id/nowph"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="#807986AC"
         android:gravity="center|left"
-        android:text="現在溫度"
+        android:text="現在PH值"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jiarestate" />
+        app:layout_constraintTop_toBottomOf="@+id/phstate" />
 
     <Button
-        android:id="@+id/jiarestate_onoff"
+        android:id="@+id/phstate_onoff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="44dp"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/jiarestate"
-        app:layout_constraintEnd_toEndOf="@+id/jiarestate"
-        app:layout_constraintTop_toTopOf="@+id/jiarestate"
+        app:layout_constraintBottom_toBottomOf="@+id/phstate"
+        app:layout_constraintEnd_toEndOf="@+id/phstate"
+        app:layout_constraintTop_toTopOf="@+id/phstate"
         app:layout_constraintVertical_bias="0.472" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
